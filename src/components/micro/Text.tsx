@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { font } from 'components/utils/Font'
 
 export interface TextProps {
   bold?: boolean
@@ -48,6 +49,7 @@ const noSelectStyle = css`
 export const Text = styled.span<TextProps>`
   display: inline-block;
   color: ${({ theme }) => theme.palette.text};
+  ${font()}
   ${({ bold, boldness, italic, underline, size, block, center, right, left, noSelect }) => css`
     ${noSelect && noSelectStyle}
     ${bold && boldStyle}
