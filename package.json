@@ -5,10 +5,11 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "yarn lint && yarn test && tsc && vite build",
+    "build": "yarn check && vite build",
     "lint": "eslint src/**/*.{tsx,ts}",
     "lint:fix": "eslint src/**/*.{tsx,ts} --fix",
     "test": "jest",
+    "check": "yarn lint && yarn test && tsc",
     "preview": "vite preview"
   },
   "moduleDirectories": [
