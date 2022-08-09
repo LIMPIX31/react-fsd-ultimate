@@ -1,24 +1,26 @@
 # Modern React Template
 
-## ⬇️ Install 
+## Install 
 ```bash
 yarn
 ```
 
-## ▶ Start
+## Start
 ```bash
 yarn start
 # or
 yarn dev
 ```
 
-## 📦 Build
+## Build
 ```bash
 yarn build
 ```
 
-## 💠 Miscelaneous scripts
+## Miscelaneous scripts
 ```bash
 yarn lint # Lint all files using eslint
 yarn lint:fix # Fix all files using lint
+yarn test # Run Jest
+yarn check # Run All checks (eslint, jest, typescript)
 ```
